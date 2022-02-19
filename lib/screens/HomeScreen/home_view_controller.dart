@@ -4,10 +4,11 @@ class HomeViewController extends GetxController {
   /// tv
 
   var appName = '';
-  var username = 'shatil24';
-  var userId = '110';
-  var userBalance = 1200;
-  var userDataList = [];
+  String userFirstnme = '';
+  var username = 'shatil24'.obs;
+  var userId = '110'.obs;
+  var userBalance = 1200.obs;
+  var userDataList = [].obs;
 
   @override
   void onInit() {
