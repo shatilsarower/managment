@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'home_view_controller.dart';
 
 /// In this page all the UI elements are going to created. import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
-  const HomeView({Key? key}) : super(key: key);
+  HomeView({Key? key}) : super(key: key);
+
+  final HomeViewController _controller = Get.put(HomeViewController());
 
   @override
   Widget build(BuildContext context) {
