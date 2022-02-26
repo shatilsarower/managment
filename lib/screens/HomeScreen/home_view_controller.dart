@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 
 class HomeViewController extends GetxController {
@@ -28,13 +29,17 @@ class HomeViewController extends GetxController {
 
   @override
   void onClose() {
-    print("Class Name$runtimeType method name : onClose");
+    if (kDebugMode) {
+      print("Class Name$runtimeType method name : onClose");
+    }
     super.onClose();
   }
 
   @override
   void dispose() {
-    print("Class Name$runtimeType method name : dispose");
+    if (kDebugMode) {
+      print("Class Name$runtimeType method name : dispose");
+    }
     super.dispose();
 
     username.close();
