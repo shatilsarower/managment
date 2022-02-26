@@ -15,7 +15,7 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('GetX'),
+        title: Text(_controller.appName.value),
       ),
       drawer: const Drawer(),
     );
