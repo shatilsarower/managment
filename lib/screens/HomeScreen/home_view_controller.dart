@@ -23,7 +23,9 @@ class HomeViewController extends GetxController {
       110,
       [1, 2, 3, 4],
     ];
-    print("Class Name$runtimeType method name : onInit");
+    if (kDebugMode) {
+      print("Class Name$runtimeType method name : onInit");
+    }
     super.onInit();
   }
 
