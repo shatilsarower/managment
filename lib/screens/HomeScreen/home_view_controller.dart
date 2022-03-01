@@ -9,7 +9,7 @@ class HomeViewController extends GetxController {
   var userBalance = 0.0.obs;
   var userDataList = [].obs;
 
-  @override
+ 
   void onInit() {
     appName.value = 'Home Screen';
     username.value = 'Sarower Murshed Shatil';
