@@ -7,7 +7,7 @@ class HomeViewController extends GetxController {
   var username = ''.obs;
   var userId = 0.obs;
   var userBalance = 0.0.obs;
-  var userDataList = [];
+  var userDataList = [].obs;
 
   @override
   void onInit() {
