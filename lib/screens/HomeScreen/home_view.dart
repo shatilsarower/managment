@@ -3,7 +3,8 @@ import 'package:get/get.dart';
 
 import 'home_view_controller.dart';
 
-/// In this page all the UI elements are going to created. import 'package:flutter/material.dart';
+/// In this page all the UI elements are going to created.
+/// import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
   HomeView({Key? key}) : super(key: key);
