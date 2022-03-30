@@ -48,3 +48,8 @@ class HomeViewController extends GetxController {
     userId.close();
   }
 }
+
+///  dispose()
+///  onClose()
+///  onInit()
+///  These are lifecycle method.
