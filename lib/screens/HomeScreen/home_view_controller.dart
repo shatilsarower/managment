@@ -9,7 +9,7 @@ class HomeViewController extends GetxController {
   var userBalance = 0.0.obs;
   var userDataList = [].obs;
 
-  /// .obs = .obs makes any variable observable. So if we make any change to this variable this will effect all over the UI.
+  /// (.obs) = .obs makes any variable observable. So if we make any change to this variable this will effect/change automatically  all over the UI. And it should use in the dynamic(var) variable.
 
   @override
   void onInit() {
