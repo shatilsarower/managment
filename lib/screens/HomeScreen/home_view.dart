@@ -5,6 +5,7 @@ import 'home_view_controller.dart';
 
 /// In this page all the UI elements are going to created.
 /// import 'package:flutter/material.dart';
+/// UI->>> View(No Logical properties will not present here)
 
 class HomeView extends StatelessWidget {
   HomeView({Key? key}) : super(key: key);
