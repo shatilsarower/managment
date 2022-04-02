@@ -11,7 +11,7 @@ class HomeViewController extends GetxController {
 
   /// (.obs) = .obs makes any variable observable.
   /// So if we make any change to this variable this will effect/change automatically  all over the UI.
-  /// And it should use in the dynamic(var) variable.
+  /// And it should be use in the dynamic(var) variable.
 
   @override
   void onInit() {
