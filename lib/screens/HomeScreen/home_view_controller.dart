@@ -24,12 +24,11 @@ class HomeViewController extends GetxController {
       'Hasib',
       'Sazzad',
       'Mohammad',
-      110,
-      [1, 2, 3, 4],
     ];
     if (kDebugMode) {
       print("Class Name$runtimeType method name : onInit");
     }
+    _changeMyData();
     super.onInit();
   }
 
@@ -50,6 +49,11 @@ class HomeViewController extends GetxController {
 
     username.close();
     userId.close();
+  }
+
+  void _changeMyData() async {
+    await Future.delayed(const Duration(seconds: 2));
+    appName.value = 'DashBoard';
   }
 }
 

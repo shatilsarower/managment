@@ -17,9 +17,23 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(_controller.appName.value),
+        title: Obx(
+          () => Text(_controller.appName.value),
+        ),
       ),
       drawer: const Drawer(),
+      body: Container(
+        child: Obx(
+          () => ListView.builder(
+            itemCount: _controller.userDataList.length,
+            itemBuilder: ((context, index) => ListTile(
+                  title: Text(
+                    _controller.userDataList[index].toString(),
+                  ),
+                )),
+          ),
+        ),
+      ),
     );
   }
 }
