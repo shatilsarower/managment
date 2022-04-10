@@ -61,7 +61,11 @@ class HomeViewController extends GetxController {
       userDataList.add('New SMS $i');
     }
 
-    Get.snackbar('Success', 'Data insert successful');
+    Get.snackbar(
+      'Success',
+      'Data insert successful',
+      snackPosition: SnackPosition.BOTTOM,
+    );
   }
 }
 
