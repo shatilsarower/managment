@@ -60,6 +60,8 @@ class HomeViewController extends GetxController {
       await Future.delayed(const Duration(seconds: 1));
       userDataList.add('New SMS $i');
     }
+
+    Get.snackbar('Success', 'Data insert successful');
   }
 }
 
