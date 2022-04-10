@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:get/get.dart';
 
 class HomeViewController extends GetxController {
@@ -29,7 +31,7 @@ class HomeViewController extends GetxController {
     if (kDebugMode) {
       print("Class Name$runtimeType method name : onInit");
     }
-    _changeMyData();
+    // _changeMyData();
     super.onInit();
   }
 
@@ -71,7 +73,36 @@ class HomeViewController extends GetxController {
 
   void callBottomSheet() {
     Get.bottomSheet(
-      Container(),
+      Container(
+        height: 200,
+        width: double.infinity,
+        decoration: const BoxDecoration(
+          color: Colors.white70,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(10),
+            topRight: Radius.circular(10),
+          ),
+        ),
+        child: Column(
+          children: [
+            Container(
+              height: 70,
+              width: double.infinity,
+              color: Colors.purple,
+            ),
+            Container(
+              color: Colors.cyanAccent,
+              height: 70,
+              width: double.infinity,
+            ),
+            Container(
+              height: 60,
+              width: double.infinity,
+              color: Colors.pinkAccent,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
