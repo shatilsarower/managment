@@ -20,6 +20,14 @@ class HomeView extends StatelessWidget {
         title: Obx(
           () => Text(_controller.appName.value),
         ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              _controller.callBottomSheet();
+            },
+            icon: const Icon(Icons.accessibility_new_rounded),
+          ),
+        ],
       ),
       drawer: const Drawer(),
       body: Container(

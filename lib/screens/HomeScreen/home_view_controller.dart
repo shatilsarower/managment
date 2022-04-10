@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 
@@ -65,6 +66,12 @@ class HomeViewController extends GetxController {
       'Success',
       'Data insert successful',
       snackPosition: SnackPosition.BOTTOM,
+    );
+  }
+
+  void callBottomSheet() {
+    Get.bottomSheet(
+      Container(),
     );
   }
 }
