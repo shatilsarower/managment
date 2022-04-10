@@ -8,15 +8,15 @@ import 'home_view_controller.dart';
 /// UI->>> View(No Logical properties will not present here)
 
 class HomeView extends StatelessWidget {
-  HomeView({Key? key}) : super(key: key);
-
   final HomeViewController _controller = Get.put(HomeViewController());
+
+  HomeView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
+        //centerTitle: true,
         title: Obx(
           () => Text(_controller.appName.value),
         ),

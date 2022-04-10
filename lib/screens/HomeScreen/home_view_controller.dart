@@ -52,8 +52,14 @@ class HomeViewController extends GetxController {
   }
 
   void _changeMyData() async {
-    await Future.delayed(const Duration(seconds: 2));
-    appName.value = 'DashBoard';
+    await Future.delayed(const Duration(seconds: 4));
+    // userDataList.value.add('New SMS');
+    appName.value = 'Sarower';
+
+    for (var i = 0; i <= 10; i++) {
+      await Future.delayed(const Duration(seconds: 1));
+      userDataList.add('New SMS $i');
+    }
   }
 }
 
